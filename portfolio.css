@@ -28,11 +28,10 @@
 } 
  
 .header {
-   border: 1px solid var(--border_color);
+   border-bottom: 1px solid var(--border_color);
 }
-.container {
-   max-width: 1200px;
-   width: 100%;
+.container_1 {
+   width: 1200px;
    margin-left: auto;
    margin-right: auto;
    padding-left: 15px;
@@ -144,6 +143,7 @@
    background-color: var(--team_color);
    border-radius: 4px;
    border: none;
+   padding: 6px 22px;
    font-family: inherit;
    font-weight: 500;
    font-size: 16px;
@@ -158,6 +158,14 @@
     color: var(--white_color);
  }
  
+
+ .container_2 {
+   width: 1200px;
+   padding-left: 15px;
+   padding-right: 15px;
+   margin-left: auto;
+   margin-right: auto;
+ }
  .visually-hidden {
     position: position;
     white-space: nowrap;
@@ -172,26 +180,26 @@
  }
 
 
-.box {
-   width: 1200px;
-   padding-left: 15px;
-   padding-right: 15px;
-   margin-left: auto;
-   margin-right: auto;
-}
+
+   
+
 
 .section__list {
+   margin: 0;
    padding-top: 90px;
    padding-bottom: 35px;
 }
 
+.information {
+   padding-left: 24px;
+   padding-right: 24px;
+}
 
 .section__header {
    font-weight: 700;
    font-size: 18px;
    line-height: 1.8;
    color: var(--link_color);
-   padding-left: 20px;
 }
 
 .section__text {
@@ -199,14 +207,12 @@
    font-size: 16px;
    line-height: 1.7;
    color: var(--list_color);
-   padding-left: 20px;
 }
 .section__list-img {
    list-style: none;
    display: flex;
    flex-wrap: wrap;
    justify-content: space-between;
-
 }
 
 .link__img {
@@ -215,11 +221,18 @@
 }
 
 
- 
- .footer {
+ .footer { 
    background-color: var(--main_color);
    padding-top: 60px;
    padding-bottom: 100px;
+}
+
+.container_3 {
+   width: 1200px;
+   margin-left: auto;
+   margin-right: auto;
+   padding-left: 15px;
+   padding-right: 15px;
 }
 
 .footer__address {
@@ -228,6 +241,8 @@
 
 .footer__list-address, .footer__list {
    list-style: none;
+   margin: 0;
+   margin-top: 20px;
 }
 
 
@@ -237,8 +252,6 @@
    font-size: 14px;
    line-height: 1.71;
    text-decoration: none;
-   padding-left: 60px;
-   padding-top: 10px;
 }
 
 .footer__link-address:hover {
@@ -251,7 +264,6 @@
    line-height: 1.71;
    color: var(--footer_link);
    text-decoration: none;
-   padding-left: 60px;
 }
 
 .footer__link:hover {
@@ -259,5 +271,6 @@
 }
 
 .footer__header {
-   padding-left: 100px;
+   color: var(--white_color);
+   margin-left: 40px;
 }
